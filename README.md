@@ -21,4 +21,4 @@
 📫 Fique à vontade para explorar meu portfólio e entre em contato para colaborações, feedback ou apenas para uma conversa técnica!
 
 ### 🌐 Conecte-se comigo:
-- [LinkedIn](https://www.linkedin.com/in/nathan-thomaz-devs/) - [Portfolio](https://seu-portfolio.com) - [Discord](https://discord.gg/H7mYnyaP) - [Email](mailto:nathanthomaz@gmail.com) - [Instagram](https://www.instagram.com/nathann_thomaz/)
+- [LinkedIn](https://www.linkedin.com/in/nathan-thomaz-devs/)  |  [Portifólio](https://seu-portfolio.com)  |  [Discord](https://discord.gg/H7mYnyaP)  |  [Email](mailto:nathanthomaz@gmail.com)  |  [Instagram](https://www.instagram.com/nathann_thomaz/)
