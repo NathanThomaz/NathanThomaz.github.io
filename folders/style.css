@@ -1,0 +1,455 @@
+body {
+    margin: 0; /* Remove a margem padrão do body */
+    padding: 0; /* Remove o preenchimento padrão do body */
+    justify-content: center;
+    display: flex;
+}
+
+:root {
+    --cor-fundo-azul: rgb(186, 213, 219); /* Definindo a variável cor-destaque e atribuindo a cor laranja (#ff6600) */
+    --cor-fundo-marrom: #a59393; 
+}
+
+#total_area{
+    width: 1250px;
+    border-left: 4px solid;
+    border-right: 4px solid;
+}
+
+/* Header começa aqui */
+#barra_superior{
+    background-color:rgb(186, 213, 219);
+    display: flex;
+    height: 50px;
+    justify-content: center;
+}
+
+#div_vazia{
+    width: 500px;
+}
+
+/* Lado esquerdo */
+#barra_superior #canto_esquerdo{
+    margin: 13px;
+}
+
+/* Lado direito */
+#barra_superior #canto_direito{
+    margin: 13px -100px 0px 0px;
+    word-spacing: 15px;
+}
+
+#barra_superior #canto_direito a,
+#barra_superior #canto_esquerdo a{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    margin-right: 15px;
+}
+
+/* Funcionalidade do mouse usando hover */
+#barra_superior #canto_direito a:hover,
+#barra_superior #canto_esquerdo a:hover {
+    color: rgb(255, 0, 81);
+    text-decoration: underline black;
+}
+
+/* Header acaba aqui */
+
+/* Começa a section principal */
+#box_principal {
+    height: 300px;
+    background-color: #a59393;
+    display: flex;
+    justify-content: center;
+    border-top: 5px solid #000000 ;
+}
+
+#box_principal #imagens_esquerda {
+    display: flex;
+    flex-direction: column; /* Alteração aqui */
+    justify-content: center;
+    align-items: center;
+    padding: 0px 100px 0px 0px;
+}
+
+#box_principal #imagens_esquerda a{
+    height: 30px;
+    width: 30px;
+    padding: 10px 30px 25px 0px;
+}
+
+/* Imagem git e linkedin */
+#box_principal #imagens_esquerda img{
+    width: 50px;
+    height: 50px;
+}
+
+#box_principal #imagens_esquerda img:hover{
+    width: 55px;
+    height: 55px;
+}
+
+#box_principal #meu_nome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 250px 0px 0px;
+}
+
+/* Meu nome */
+#box_principal #meu_nome a#nome_real{
+    font-size: 45px;
+    color: rgb(0, 0, 0);
+}
+
+/* Nome da minha profissão */
+#box_principal #meu_nome a#nome_do_cargo{
+    font-size: 19px;
+}
+
+/* Botão de download do currículo */
+#box_principal #meu_nome button{
+    height: 40px;
+    width: 150px;
+    margin-top: 10px;
+    border-radius: 20px;
+    transition: width 0.3s ease, background-color 0.3s ease, font-size 0.3s ease;
+    cursor: pointer;
+}
+
+#box_principal #meu_nome button:hover{
+    width: 180px;
+    background-color: rgb(231, 139, 139);
+    color: white;
+    font-size: 15px;
+}
+
+/* Imagem ao lado do meu nome */
+#box_principal #meu_nome img{
+    width: 25px;
+    height: 25px;
+}
+
+#box_principal #minha_foto{
+    display: flex;
+    align-items: center;
+}
+
+#box_principal #minha_foto img{
+    width: 205px;
+    height: 205px;
+    border-radius: 180px;
+    border: 15px solid rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+/* Box Sobre mim começa */
+#box_sobre_mim{
+    background-color: var(--cor-fundo-azul);
+    border-top: 5px solid #000000 ;
+}
+
+#box_sobre_mim #title_sobre_mim{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    text-decoration: 3px underline rgb(255, 0, 81);
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+}
+
+/* Ajustando o tamanho da caixa de texto e a fonte do texto */
+#box_sobre_mim #text_sobre_mim{
+    margin-top: 15px;
+    text-align:center;
+    width: 80%;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+/* Alinhando área do TEXTO */
+#box_sobre_mim #tam_area_text{
+    display: flex;
+    justify-content: center;
+    border-bottom: 5px solid #000000 ;
+}
+
+/* Segunda Section **** FORMAÇÃO **** */
+
+/* Tamanho da área de FORMAÇÃO */
+#tam_area_formacao{
+    background-color: #a59393;
+    display: flex;
+    justify-content: center;
+    border-bottom: 5px solid #000000 ;
+}
+ /* Espaço entre a FORMAÇÂO e CURSOS */
+#tam_area_formacao #ensinos{
+    margin-right: 20px;
+}
+
+/* FOnte do titulo da área de formação */
+#tam_area_formacao #ensinos,
+#tam_area_formacao #cursos_complementares{
+    margin: 15px 40px 22px 0px;
+    font-size: 17px;
+}
+
+/* Tamanho da fonte dos cursos e da formação */ 
+#tam_area_formacao #ensinos .nome_instituicao,
+#tam_area_formacao #cursos_complementares .nome_instituicao{
+    font-size: 20px;
+}
+
+/* Propriedades do Titulo */
+#tam_area_formacao #ensinos .title_formacao,
+#tam_area_formacao #cursos_complementares .title_formacao{
+    text-decoration: 3px underline yellow;
+    justify-content: center;
+    display: flex;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    margin: 10px 0px 25px 0px;
+}
+
+/* Atributo da SETA para aumentar o tamnho */
+.seta{
+    font-weight: bold;
+    font-size: 20px;
+}
+ /* Aplicando margem entre os cursos para ter espaçamento */
+#tam_area_formacao #cursos_complementares li,
+#tam_area_formacao #ensinos li{
+    margin: 7px 0px 0px 0px;
+}
+
+/* Terceira Section **** HARD E SOFT SKILLS **** */
+/* Tamanho da imagem de nuvem */
+#tam_nuvem{
+    height: 100px;
+    width: 270px;
+}
+
+/* Centralizando a div de Habilidades e a imagem da nuvem */
+#area_titulo_habilidade{
+    height: 100px;
+    background-color: rgb(186, 213, 219);
+    text-align: center;
+    position: relative;
+}
+
+/* Modificando a palavra Habilidades */
+#area_titulo_habilidade #txt_habilidade{
+    font-size: 35px;
+    text-decoration: 3px underline rgb(255, 0, 81);
+    font-family: 'Times New Roman', Times, serif;
+    font-style:oblique;
+    position: absolute;
+    top: 50%; /* Posiciona o elemento no meio da altura do contêiner pai */
+    left: 50.5%; /* Posiciona o elemento no meio da largura do contêiner pai */
+    transform: translate(-50%, -50%); /* Ajusta o posicionamento para o centro absoluto */
+}
+
+/* Ajustando o tamanho da DIV no BODY*/
+#area_soft_and_hard_skills{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(186, 213, 219);
+    height: 315px;
+    border-bottom: 4px solid black;
+}
+
+/* Tamanho da área de soft e hard skils*/
+#area_soft_and_hard_skills #soft_skills,
+#area_soft_and_hard_skills #hard_skills{
+    height: 250px;
+    margin: 15px;
+    width: 400px;
+    background-color: white;
+    border: 7px solid black;
+    border-radius: 20px;
+}
+
+ /* Titulo da área */
+#area_soft_and_hard_skills .title_soft_skill{
+    display: flex;
+    justify-content: center;
+    text-decoration: 3px underline rgb(255, 0, 81);
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    margin-top: 10px;
+}
+
+/* Tamanho das imagens que tem dentro da box de hard_skill*/
+.tam_img_hard_skills{
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+/* Separando e alinhando o texto com as imagens dentro da hard skills*/
+#area_soft_and_hard_skills #hard_skills .aa{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    border: 2px dashed;
+    padding: 0px 10px 0px 5px;
+}
+
+/* deixando a Caixa de hard e soft skills lado a lado, ajustando a caixa para alinhar todos as divs */
+#area_soft_and_hard_skills #hard_skills .caixa,
+#area_soft_and_hard_skills #soft_skills .caixa{
+    justify-content: center;
+    display: flex;
+}
+
+/* Margem para afastar */
+#area_soft_and_hard_skills #hard_skills #ld_direito{
+    margin-left: 80px;
+}
+
+/* Ajustando dentro da lista de SOft Skill a posição e o tamanho da fonte */
+.caixa .ld_esquerdo li,
+.caixa .ld_direito li{
+    margin: 0px 0px 14px 0px;
+    font-size: 17px;
+}
+
+/* Quarte section **** PROJETOS **** */
+/* Acertando o título PROJETOS*/
+#titulo_projetos{
+    background-color: #a59393;
+    height: 80px;
+    text-align: center;
+}
+/*Aplicando efeitos no TEXTO do TÍTULO */
+#texto_projetos{
+    font-size: 35px;
+    text-decoration: 3px underline yellow;
+    font-family: 'Times New Roman', Times, serif;
+    font-style:oblique;
+    position: relative;
+    top: 20px;
+}
+
+/* DIV GLOBAL dos projetos */
+#caixa_dos_projetos{
+    display: flex;
+    height: 350px;
+    justify-content: center;
+    background-color: #a59393;
+    border-bottom: 4px solid black;
+}
+
+/* Acertando a DIV de cada projeto */
+.projeto{
+    height: 290px;
+    margin: 15px;
+    width: 350px;
+    background-color: white;
+    border: 4px solid black;
+    border-radius: 20px;
+    text-align: center;
+}
+/* Tamanho da CAPA do projeto */
+.tam_img_projeto{
+    height: 130px;
+    width: 200px;
+    margin-top: 15px;
+}
+
+/* Texto entre a imagem e o botão de DEPLOY nos projetos*/
+.texto_info_projeto{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+/* Acertando o botão de DEPLOY e aplicando efeitos visiuais*/
+.botao_deploy_projeto button,
+.link_repositorio button{
+    text-align: center;
+    height: 40px;
+    width: 180px;
+    margin-top: 5px;
+    border-radius: 20px;
+    transition: width 0.3s ease, background-color 0.3s ease, font-size 0.3s ease;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.botao_deploy_projeto button:hover,
+.link_repositorio button:hover{
+    width: 200px;
+    background-color: rgb(231, 139, 139);
+    color: white;
+    font-size: 18px;
+}
+
+.link_repositorio a{
+    text-decoration: none;
+    color: black;
+}
+
+/*  Começa o FOOTER  */
+#area_de_contato{
+    height: 200px;
+    background-color: var(--cor-fundo-azul);
+    display: flex;
+    justify-content: center;
+}
+
+#box-contato{
+    background-color: black;
+    height: auto;
+    width: 800px;
+    margin-top: 30px;
+    border-radius: 100px 100px 0px 0px;
+}
+
+#area_de_contato #titulo_contato a{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style:oblique;
+    font-size: 35px;
+    text-decoration: 3px underline rgb(255, 0, 81);
+    color: white;
+}
+
+#area_de_contato #box_mensagem{
+    color: white;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 75px;
+    width: 280px;
+    text-align: center;
+}
+
+#area_de_contato #box_imgs_links img{
+    height: 40px;
+    width: 40px;
+}
+
+#box_imgs_links{
+    text-align: center;
+    margin-top: 35px;
+    word-spacing: 2cap;
+}
+
+#box_imgs_links a{
+    text-decoration: none;
+}
+
+#nome_roda_pe{
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 17px;
+}
