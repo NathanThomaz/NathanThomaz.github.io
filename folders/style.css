@@ -6,8 +6,10 @@ body {
 }
 
 :root {
-    --cor-fundo-azul: rgb(186, 213, 219); /* Definindo a variável cor-destaque e atribuindo a cor laranja (#ff6600) */
-    --cor-fundo-marrom: #a59393; 
+    --cor-fundo-azul-cinza: linear-gradient(135deg, #007bff, #757575);
+    --cor--fundo-azul-claro: rgb(186, 213, 219); 
+    --cor-fundo-marrom: #a59393;
+    --cor--vermelha: rgb(255, 0, 81);
 }
 
 #total_area{
@@ -18,7 +20,7 @@ body {
 
 /* Header começa aqui */
 #barra_superior{
-    background-color:rgb(186, 213, 219);
+    background: var(--cor--fundo-azul-claro);
     display: flex;
     height: 50px;
     justify-content: center;
@@ -43,14 +45,14 @@ body {
 #barra_superior #canto_esquerdo a{
     font-size: 20px;
     text-decoration: none;
-    color: black;
+    color: rgb(0, 0, 0);
     margin-right: 15px;
 }
 
 /* Funcionalidade do mouse usando hover */
 #barra_superior #canto_direito a:hover,
 #barra_superior #canto_esquerdo a:hover {
-    color: rgb(255, 0, 81);
+    color: white;
     text-decoration: underline black;
 }
 
@@ -59,7 +61,7 @@ body {
 /* Começa a section principal */
 #box_principal {
     height: 300px;
-    background-color: #a59393;
+    background: var(--cor-fundo-marrom);
     display: flex;
     justify-content: center;
     border-top: 5px solid #000000 ;
@@ -146,7 +148,7 @@ body {
 
 /* Box Sobre mim começa */
 #box_sobre_mim{
-    background-color: var(--cor-fundo-azul);
+    background: var(--cor--fundo-azul-claro);
     border-top: 5px solid #000000 ;
 }
 
@@ -154,7 +156,7 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 15px;
-    text-decoration: 3px underline rgb(255, 0, 81);
+    text-decoration: 3px underline var(--cor--vermelha);
     color: rgb(0, 0, 0);
     font-size: 35px;
     font-family: 'Times New Roman', Times, serif;
@@ -164,7 +166,7 @@ body {
 /* Ajustando o tamanho da caixa de texto e a fonte do texto */
 #box_sobre_mim #text_sobre_mim{
     margin-top: 15px;
-    text-align:center;
+    text-align:justify;
     width: 80%;
     margin-bottom: 25px;
     font-size: 20px;
@@ -237,7 +239,7 @@ body {
 /* Centralizando a div de Habilidades e a imagem da nuvem */
 #area_titulo_habilidade{
     height: 100px;
-    background-color: rgb(186, 213, 219);
+    background: var(--cor--fundo-azul-claro);
     text-align: center;
     position: relative;
 }
@@ -258,7 +260,7 @@ body {
 #area_soft_and_hard_skills{
     display: flex;
     justify-content: center;
-    background-color: rgb(186, 213, 219);
+    background: var(--cor--fundo-azul-claro);
     height: 315px;
     border-bottom: 4px solid black;
 }
@@ -398,7 +400,8 @@ body {
 /*  Começa o FOOTER  */
 #area_de_contato{
     height: 200px;
-    background-color: var(--cor-fundo-azul);
+    background: var(--cor--fundo-azul-claro);
+
     display: flex;
     justify-content: center;
 }
