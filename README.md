@@ -11,6 +11,7 @@ Além disso, inclui links para meus projetos, currículo e formas de entrar em c
 
 - HTML
 - CSS
+- JavaScript
 
 ## Como Visualizar
 
@@ -22,5 +23,5 @@ Nathan Thomaz
 
 ## Contato
 
-Você pode entrar em contato comigo através do meu [LinkedIn](https://www.linkedin.com/in/nathan-thomaz/) ou [Twitter](https://twitter.com/NathanThomaz).
+Você pode entrar em contato comigo através do meu [LinkedIn](https://www.linkedin.com/in/nathan-thomaz/).
 
